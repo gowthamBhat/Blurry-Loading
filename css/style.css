@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% of 16px = 10px from this we can easily measure the rem size */
+  font-size: 62.5%;
+}
+body {
+  background-color: #222;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bg {
+  background: url('https://images.unsplash.com/photo-1622227792300-65a1c201064f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+  filter: blur(70px);
+  width: 100vw;
+  height: 100vh;
+}
+.loading-text {
+  font-size: 50px;
+  color: #fff;
+}
